@@ -10,7 +10,7 @@
 - `@MapperScan` を使用して、2つのデータソースをアノテーション `@Mapper`, `@SecondaryMapper` で使い分けられるようにする。
   - [MyBatisPrimaryConfig.java](/src/main/java/com/example/demo/config/MyBatisPrimaryConfig.java)
   - [MyBatisSecondaryConfig.java](/src/main/java/com/example/demo/config/MyBatisSecondaryConfig.java)
-- テストコード [ExampleServiceTest.java](/src/test/java/com/example/demo/ExampleServiceTest.java) にて以下をテストする。
+- テストコード [DaoTest.java](/src/test/java/com/example/demo/DaoTest.java) にて、以下をテストする。
   - [PrimaryDao.java](/src/main/java/com/example/demo/mapper/PrimaryDao.java) ([PrimaryDao.xml](/src/main/resources/com/example/demo/mapper/PrimaryDao.xml))
     は `spring.datasource`
     のデータソース（SQL Server）で実行される。
