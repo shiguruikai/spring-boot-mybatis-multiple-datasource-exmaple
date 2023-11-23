@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;trustServerCertificate=true
+    username: sa
+    password: password
+app:
+  secondary-datasource:
+    url: jdbc:oracle:thin:@//localhost:1521
+    username: SYSTEM
+    password: password
+logging:
+  level:
+    com.example.demo.mapper: trace
