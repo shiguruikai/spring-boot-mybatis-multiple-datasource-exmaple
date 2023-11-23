@@ -6,7 +6,7 @@
 
 - [application.yml](/src/main/resources/application.yml) にデータソースを2つ定義する。
   - `spring.datasource`
-  - `app.secondary-datasource`
+  - `spring.datasource2`
 - `@MapperScan` を使用して、2つのデータソースをアノテーション `@Mapper`, `@SecondaryMapper` で使い分けられるようにする。
   - [MyBatisPrimaryConfig.java](/src/main/java/com/example/demo/config/MyBatisPrimaryConfig.java)
   - [MyBatisSecondaryConfig.java](/src/main/java/com/example/demo/config/MyBatisSecondaryConfig.java)
@@ -15,5 +15,5 @@
     は `spring.datasource`
     のデータソース（SQL Server）で実行される。
   - [SecondaryDao.java](/src/main/java/com/example/demo/mapper/SecondaryDao.java) ([SecondaryDao.xml](/src/main/resources/com/example/demo/mapper/SecondaryDao.xml))
-    は `app.secondary-datasource`
+    は `spring.datasource2`
     のデータソース（Oracle）で実行される。

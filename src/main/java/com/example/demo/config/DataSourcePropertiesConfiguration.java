@@ -19,7 +19,7 @@ public class DataSourcePropertiesConfiguration {
   }
 
   @Bean(SECONDARY_DATA_SOURCE_PROPERTIES_NAME)
-  @ConfigurationProperties("app.secondary-datasource")
+  @ConfigurationProperties("spring.datasource2")
   public DataSourceProperties secondaryDataSourceProperties() {
     return new DataSourceProperties();
   }
