@@ -1,4 +1,4 @@
-## Spring Boot + MyBatis multiple datasource usage example
+## Multiple datasource usage example with MyBatis in Spring Boot
 
 「Spring Boot + MyBatis」で複数のデータソースを使用するサンプルコード。
 
