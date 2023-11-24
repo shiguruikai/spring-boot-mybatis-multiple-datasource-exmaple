@@ -7,7 +7,7 @@
 - [application.yml](/src/main/resources/application.yml) にデータソースを2つ定義する。
   - `spring.datasource`
   - `spring.datasource2`
-- [DataSourcePropertiesConfiguration.java](/src/main/java/com/example/demo/config/DataSourcePropertiesConfiguration.java) で2つのデータソースのプロパティを参照できるようにする。
+- [DataSourcePropertiesConfiguration.java](/src/main/java/com/example/demo/config/DataSourcePropertiesConfiguration.java) で2つのデータソースのプロパティをBeanに登録する。
 - `@MapperScan` を使用して、2つのデータソースをアノテーション `@Mapper`, `@SecondaryMapper` で使い分けられるようにする。
   - [MyBatisPrimaryConfig.java](/src/main/java/com/example/demo/config/MyBatisPrimaryConfig.java)
   - [MyBatisSecondaryConfig.java](/src/main/java/com/example/demo/config/MyBatisSecondaryConfig.java)
